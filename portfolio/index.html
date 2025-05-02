@@ -184,17 +184,54 @@
   }
 }
 
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  max-width: 600px;
+}
+
+@media (min-width: 992px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .header-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  header img {
+    margin-bottom: 0;
+  }
+}
+
+#home{
+    margin-top: 10px;
+}
+
   </style>
 </head>
 <body>
 
-  <header>
-    <!-- Replace with your photo -->
-    <img src="isaac.JPG" alt="Ibrahim Isaac" />
-    <h1>Ibrahim Isaac</h1>
-    <p>ICT Professional | Networking | Software Development | Systems Management</p>
-    <p>Based in Lilongwe, Area 44 | Degree in ICT from Daeyang University</p>
-  </header>
+    <header>
+        <div class="header-content">
+            <img src="isaac.JPG" alt="Ibrahim Isaac" />
+          <div class="header-text">
+            <h1>Ibrahim Isaac</h1>
+            <p>ICT Professional | Networking | Software Development | Systems Management</p>
+            <p>Based in Lilongwe, Area 44 | Degree in ICT from Daeyang University</p>
+          </div>
+          
+        </div>
+      </header>
+      
 
   <nav>
     <div class="nav-container">
