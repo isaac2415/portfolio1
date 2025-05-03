@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <title>Ibrahim Isaac</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      
+    }
+    body { animation: fadeIn 1.5s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        section {
+        opacity: 0;
+        transform: translateY(80px);
+        transition: all 0.9s ease-in-out;
+    }
+
+    section.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+      transition: all 2s ease-in-out;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-image: url(isaac1.jfif);
+      background-size: cover;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+    }
+    nav {
+      background-color: #1371c9;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 2s ease-in-out;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: #0056b3;
+    }
+    header img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-bottom: 20px;
+      padding: 5px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      animation: fadeIn 2s ease-in-out;
+    }
+    h2 {
+      color: rgb(0, 123, 255);
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #002244;
+      color: #fff;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        margin: 10px 5px;
+      }
+      header img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+    h3{
+        color: #0056b3;
+    }
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-icons a {
+  font-size: 3rem;
+  color: #1371c9;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #0056b3;
+  transform: scale(1.2);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1371c9;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  max-width: 600px;
+}
+
+@media (min-width: 992px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .header-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  header img {
+    margin-bottom: 0;
+  }
+}
+
+#home{
+    margin-top: 10px;
+}
+
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="isaac.JPG" alt="Ibrahim Isaac" />
+          <div class="header-text">
+            <h1>Ibrahim Isaac</h1>
+            <p>ICT Professional | Networking | Software Development | Systems Management</p>
+            <p>Based in Lilongwe, Area 44 | Degree in ICT from Daeyang University</p>
+          </div>
+          
+        </div>
+      </header>
+      
+
+  <nav>
+    <div class="nav-container">
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Welcome to my professional portfolio. Scroll down or use the navigation above to explore my background, skills, and work.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate and results-driven ICT professional with 4 years of experience in networking, computer hardware, software installation, and full-stack development. I specialize in creating efficient digital solutions and have contributed to a range of software and hardware projects. My foundation in ICT, gained from Daeyang University, is matched with hands-on experience in real-world problem-solving.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><strong>Networking</strong></div>
+      <div><strong>Computer Assembling</strong></div>
+      <div><strong>Software Installation</strong></div>
+      <div><strong>Java, Python, PHP</strong></div>
+      <div><strong>HTML, CSS, JavaScript</strong></div>
+      <div><strong>C Programming</strong></div>
+      <div><strong>Flutter (Mobile Apps)</strong></div>
+      <div><strong>Database Management</strong></div>
+      <div><strong>Technical Support</strong></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div>
+        <h3>Chichewa to English Translation App</h3>
+        <p>A mobile app designed for language learning and translation assistance between Chichewa and English.</p>
+      </div>
+      <div>
+        <h3>Weather App in C</h3>
+        <p>A lightweight command-line weather application built using C programming to fetch and display weather data.</p>
+      </div>
+      <div>
+        <h3>College Algebra Solver</h3>
+        <p>A web-based application built with PHP and JavaScript to solve complex college-level algebraic equations.</p>
+      </div>
+      <div>
+        <h3>Guesthouse Management System</h3>
+        <p>A complete desktop software in Java for managing bookings, customer data, and finances of a guesthouse. Download <a href="https://isaac2415.github.io/guesthouseSystem/" target="_blank">Here</a></p>
+      </div>
+      <div>
+        <h3>Online Portfolio Website</h3>
+        <p>This professional single-page portfolio showcasing skills, projects, and contact info.</p>
+      </div>
+      <div>
+        <h3>Online Quran Verse finder Website</h3>
+        <p>This professional single-page website helps muslims to find Sulah and Ayah by just entering Sulah number and Ayah number.. Quran in Hand <a href="https://isaac2415.github.io/quranverse/">Here</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Daeyang University</strong> — Bachelor's Degree in Information and Communication Technology</p>
+    <p>Graduated with strong emphasis on systems development, networking, and modern programming technologies.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-icons">
+      <a href="mailto:isaacibrah4@gmail.com" target="_blank" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="tel:+265990088193" title="Call">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ibrahim-isaac-48b5b7327/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/isaac2415" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+  
+
+<footer>
+  <p>&copy; <span id="year"></span> Ibrahim Isaac. All Rights Reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+</body>
+</html>
+
+<script>
+    const sections = document.querySelectorAll("section");
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.1 });
+  
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+  
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+  
