@@ -332,9 +332,14 @@
   </section>
   
 
-  <footer>
-    <p>&copy; 2025 Ibrahim Isaac. All Rights Reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; <span id="year"></span> Ibrahim Isaac. All Rights Reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
 </body>
 </html>
